@@ -1,0 +1,78 @@
+Oracle Cloud Platform – User Documentation
+
+1. OVERVIEW
+Oracle is an internal cloud management platform designed to simplify how organizations provision, manage, and monitor their virtual infrastructure. It provides a secure, self-service interface for users to deploy, configure, and automate virtual machines and workloads across multiple environments.
+
+Oracle integrates with Proxmox, Broadcom, and Ollama AI to deliver a unified, modern cloud experience for enterprise teams.
+
+2. KEY FEATURES
+- Virtual Machine Provisioning
+- Resource Pool Management
+- AI Model Hosting (Ollama AI Integration)
+- Monitoring and Health Checks
+- Notifications and Alerts
+- Multi-Tenant Architecture
+
+3. GETTING STARTED
+- Access dashboard via https://oracle.company.internal
+- Create and manage virtual machines
+- Manage resource quotas
+- Deploy AI models via Ollama AI
+
+4. INTEGRATIONS
+Includes integration with Proxmox, Broadcom, PagerDuty, EWS, and Microsoft Teams Webhooks.
+
+5. QUOTAS AND USAGE
+Each project has a resource quota assigned: vCPU, Memory, Storage. Exceeding quotas triggers warnings.
+
+6. COMMON WORKFLOWS
+Examples include provisioning a VM, auto-networking, and hosting AI models.
+
+7. SECURITY AND ACCESS
+- HTTPS encryption
+- LDAP/SSO authentication
+- Full audit logging
+
+8. TROUBLESHOOTING
+| Issue | Cause | Resolution |
+| VM stuck in provisioning | Proxmox API timeout | Retry or contact support |
+| API returns 403 | Expired token | Re-authenticate |
+| Model upload fails | File too large | Use CLI upload |
+
+9. SUPPORT
+Email: support@oracle.local
+Docs: https://docs.oracle.internal
+
+10. VERSION INFORMATION
+Oracle 4.3.2 | Proxmox 2.1.0 | Ollama AI 1.4.5 | Broadcom SDK 7.0 | PagerDuty 1.2.3
+
+11. FAQ
+Q1: Can I clone a VM?
+A: Yes. Go to Compute → Virtual Machines → Clone. Select the source VM and desired configuration.
+
+Q2: Can I attach multiple ISOs?
+A: Yes, multiple ISOs can be attached for installation or recovery workflows.
+
+Q3: Are AI models automatically versioned?
+A: Yes. Each upload creates a new version entry under the model name. You can roll back or delete older versions.
+
+Q4: Can I access the model API externally?
+A: No. APIs are internal by default. External access requires admin approval and secure token exchange.
+
+Q5: How are my models secured?
+A: Oracle stores all models in encrypted object storage and restricts access via IAM roles.
+
+Q6: Can I automate tasks like provisioning or backups?
+A: Yes, Oracle provides REST APIs for automation. You can integrate with CI/CD or cron systems.
+
+Q7: How do I request more resources?
+A: Navigate to Admin → Resource Pools → Request Increase and specify the justification.
+
+Q8: What if a model inference fails?
+A: Check logs under AI → Models → Logs or contact AI support. Most issues are due to invalid input format.
+
+Q9: Is there a CLI available?
+A: Yes. Install `Oracle-cli` via pip or internal tools repository. Run `Oracle --help` for commands.
+
+Q10: Can I migrate workloads between environments?
+A: Yes, Oracle supports migration between Proxmox and Broadcom environments depending on configuration.
