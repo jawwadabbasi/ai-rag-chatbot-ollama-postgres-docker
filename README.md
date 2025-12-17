@@ -207,13 +207,13 @@ This prompt ensures:
 License
 -----------
 Proprietary License - All Rights Reserved
-© 2025 Jawwad Ahmed Abbasi, Kodelle Inc.
+© 2025 Jawwad Ahmed Abbasi, Omnitryx Inc.
 
 This project is protected under a proprietary license.
 You may view and learn from the source code for educational or portfolio purposes,
 but commercial use, modification, or redistribution requires a paid license or written permission.
 
-For licensing or commercial use inquiries: jawwad@kodelle.com
+For licensing or commercial use inquiries: jawwad@omnitryx.ca
 
 ---
 

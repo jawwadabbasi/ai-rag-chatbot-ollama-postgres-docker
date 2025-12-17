@@ -1,5 +1,5 @@
 # Built with ingenuity,
-# by Jawwad Abbasi (jawwad@kodelle.com)
+# by Jawwad Abbasi (jawwad@omnitryx.ca)
 
 # Initiates a Flask app to handle managed endpoints
 # and relays to corresponding controller and module
